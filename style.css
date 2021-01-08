@@ -6,7 +6,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background:  repeat center center/5% url('./images/nav.png'),
+    background:  repeat center center/3% url('./images/nav.png'),
     content-box radial-gradient(crimson, skyblue);
 
 }
