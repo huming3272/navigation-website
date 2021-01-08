@@ -59,7 +59,7 @@ header{
     color: white;
 }
 .g-main{
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 .g-main> .setItemWrapper{
     margin: 0 3vw;
@@ -89,6 +89,7 @@ header{
 
 .g-main> .setItemWrapper>ol>.item{
     border:1px solid black;
+    border-radius: 5%;
     width: 160px;
     margin-bottom: 20px;
     margin-right: 3vw;
