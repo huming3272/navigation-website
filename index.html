@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>启程——页面导航</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="g-header">
+        <form class="searchForm" action="https://www.baidu.com/s" method="GET">
+            <input type="text" name="wd" placeholder="请输入搜索内容">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+    <main class="g-main">
+        <div class="setItemWrapper">
+            <ol class="setItem">
+                <!-- <li class="item">
+                    <a href="https://www.acfun.cn/">
+                        <div class="logo">A</div>
+                        <div class="url">acfun.cn</div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://bilibili.com">
+                        <div class="logo">
+                            <img class="icon" src="./images/bilibili.png" alt="">
+                        </div>
+                        <div class="url">bilibili.com</div>
+                    </a>
+                </li> -->
+                <li class="item addButton last">
+                    <a href="javascript:void(0)">
+                        <div class="logo">
+                            <svg class="icon">
+                                <use xlink:href="#icon-add"></use>
+                            </svg>
+                        </div>
+                        <div class="url">新增网站</div>
+                    </a>
+                </li>
+
+            </ol>
+        </div>
+    </main>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//at.alicdn.com/t/font_2313195_cn5j4078a4.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
