@@ -75,12 +75,19 @@ function simpUrl(str) {
   // 或者.replace(/\/.*/,'')
   return shortUrl[0];
 }
-$(document).on("keypress", (e) => {
-  const { key } = e;
-  hashMap.forEach((n) => {
-    if (n.logo.toLowerCase() === key) {
-      window.open(n.url);
-    }
-    console.log(n.logo);
-  });
-});
+function openUrl(e){
+    const { key } = e;
+    hashMap.forEach((n) => {
+      if (n.logo.toLowerCase() === key) {
+        window.open(n.url);
+      }
+    });
+}
+$('input[name=wd]').on("focus",(e)=>{
+  $(document).off("keypress",openUrl)
+})
+$('input[name=wd]').on("blur",(e)=>{
+  $(document).on("keypress",openUrl)
+})
+$(document).on("keypress",openUrl);
+

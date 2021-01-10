@@ -88,9 +88,10 @@ header{
 
 
 .g-main> .setItemWrapper>ol>.item{
-    border:1px solid black;
+    /* border:1px solid black; */
     border-radius: 5%;
     width: 160px;
+    color:rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
     margin-right: 3vw;
     display: flex;
@@ -99,6 +100,9 @@ header{
     align-items: center;
     padding: 5px 10px;
     position:relative;
+    cursor: default;
+    user-select: none;
+    background: rgba(187, 187, 187, 0.5);
 }
 .g-main> .setItemWrapper ol >.item>.icon{
     position:absolute;
@@ -120,6 +124,7 @@ header{
 .g-main>.setItemWrapper ol >.item .logo .icon{
     width: 64px;
     height: 64px;
+    opacity: 0.5;
 }
 .g-main>.setItemWrapper ol >.item .url{
     font-size: 18px;
@@ -136,5 +141,5 @@ header{
     cursor:pointer;
 }
 .g-main>.setItemWrapper ol >.item:hover .close{
-    opacity: 1
+    opacity: 0.5
 }
