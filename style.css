@@ -114,7 +114,7 @@ header{
 .g-main>.setItemWrapper ol >.item .logo{
     font-size: 72px;
     height: 64px;
-    width: 64px;
+    /* width: 64px; */
     display: flex;
     justify-content: center;
     align-items: center;
